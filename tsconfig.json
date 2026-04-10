@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": ["ES6"],
+    "strict": true,
+    "jsx": "react-native",
+    "declaration": true,
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "5.0",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
+}

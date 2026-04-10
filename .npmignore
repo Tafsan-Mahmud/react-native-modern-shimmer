@@ -1,0 +1,8 @@
+__tests__/
+.github/
+example/
+src/
+.eslintrc
+.prettierrc
+babel.config.js
+tsconfig.json

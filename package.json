@@ -1,0 +1,46 @@
+{
+  "name": "react-native-modern-shimmer",
+  "version": "1.0.0",
+  "description": "A lightweight, zero-dependency shimmer placeholder component for React Native and Expo.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "shimmer",
+    "skeleton",
+    "placeholder",
+    "loading",
+    "animation",
+    "dark-mode",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/react-native-modern-shimmer.git"
+  },
+  "author": "Your Name <your@email.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/react-native-modern-shimmer/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/react-native-modern-shimmer#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0"
+  }
+}
