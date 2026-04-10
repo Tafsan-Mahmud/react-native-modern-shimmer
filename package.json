@@ -14,7 +14,7 @@
     "build": "tsc",
     "prepare": "tsc"
   },
-  "keywords": [
+"keywords": [
     "expo",
     "loader",
     "shimmer",
@@ -25,11 +25,21 @@
     "typescript",
     "placeholder",
     "react-native",
+    "expo-shimmer",
+    "shimmer-effect",
+    "skeleton-loader",
+    "pulse-animation",
+    "loading-placeholder",
     "react native loader",
+    "react-native-loading",
     "skeleton placeholder",
     "react native shimmer",
-    "react native skeleton"
-  ],
+    "react native skeleton",
+    "react-native-shimmer",
+    "react-native-skeleton",
+    "react-native-animation",
+    "react-native-placeholder"
+],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tafsan-Mahmud/react-native-modern-shimmer.git"
