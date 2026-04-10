@@ -167,10 +167,10 @@ The component ships with carefully chosen defaults that look great out of the bo
 
 | Mode | Base Color | Description |
 |---|---|---|
-| Light | `#e2e5ea` | Neutral cool gray — works on white and light surfaces |
-| Dark | `#2c2f38` | Dark slate — works on dark surfaces |
+| Light | `#cbcbcb` | Neutral cool gray — works on white and light surfaces |
+| Dark | `#2d2e32` | Dark slate — works on dark surfaces |
 
-Override with `baseColor` to match your app's exact surface color.
+### Override with `baseColor` to match your app's exact surface color.
 
 ---
 
