@@ -15,26 +15,31 @@
     "prepare": "tsc"
   },
   "keywords": [
-    "react-native",
     "expo",
+    "loader",
     "shimmer",
-    "skeleton",
-    "placeholder",
     "loading",
-    "animation",
+    "skeleton",
     "dark-mode",
-    "typescript"
+    "animation",
+    "typescript",
+    "placeholder",
+    "react-native",
+    "react native loader",
+    "skeleton placeholder",
+    "react native shimmer",
+    "react native skeleton"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/react-native-modern-shimmer.git"
+    "url": "https://github.com/Tafsan-Mahmud/react-native-modern-shimmer"
   },
-  "author": "Your Name <your@email.com>",
+  "author": "Abu Hasnat Nobin tafsanmahmudnobin090@gmail.com ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/react-native-modern-shimmer/issues"
+    "url": "https://github.com/Tafsan-Mahmud/react-native-modern-shimmer/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/react-native-modern-shimmer#readme",
+  "homepage": "https://github.com/Tafsan-Mahmud/react-native-modern-shimmer#readme",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
