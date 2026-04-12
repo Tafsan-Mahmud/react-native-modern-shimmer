@@ -19,7 +19,7 @@ export interface ShimmerProps {
      * Height of the shimmer placeholder in pixels.
      * @default 16
      */
-    height?: number;
+    height?: DimensionValue;
     /**
      * Border radius of the shimmer placeholder.
      * @default 8
