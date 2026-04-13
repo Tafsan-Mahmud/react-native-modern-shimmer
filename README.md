@@ -20,17 +20,23 @@ A lightweight, **zero-dependency** shimmer placeholder component for React Nativ
 
 ---
 
-## Installation
+## 📦 Installation
+
+Choose your preferred package manager:
 
 ```bash
 # npm
-npm install react-native-modern-shimmer
+ npm install react-native-modern-shimmer
+```
 
+```bash
 # yarn
-yarn add react-native-modern-shimmer
+ yarn add react-native-modern-shimmer
+```
 
+```bash
 # expo
-npx expo install react-native-modern-shimmer
+ npx expo install react-native-modern-shimmer
 ```
 
 > **No additional setup required.** No native modules, no linking, no extra packages.
