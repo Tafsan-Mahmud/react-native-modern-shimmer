@@ -13,9 +13,10 @@ A lightweight, **zero-dependency** shimmer placeholder component for React Nativ
 
 ## Preview
 
-| Light Mode | Dark Mode |
-|---|---|
-| Smooth pulse on light background | Subtle pulse on dark background |
+| Android | iOS |
+|:---:|:---:|
+| ![Android Light](https://raw.githubusercontent.com/Tafsan-Mahmud/react-native-modern-shimmer/main/assets/android-light.gif) | ![iOS Light](https://raw.githubusercontent.com/Tafsan-Mahmud/react-native-modern-shimmer/main/assets/ios-light.gif) |
+| ![Android Dark](https://raw.githubusercontent.com/Tafsan-Mahmud/react-native-modern-shimmer/main/assets/android-dark.gif) | ![iOS Dark](https://raw.githubusercontent.com/Tafsan-Mahmud/react-native-modern-shimmer/main/assets/ios-dark.gif) |
 
 ---
 
@@ -59,7 +60,7 @@ export default function MyScreen() {
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `width` | `number \| string` | `"100%"` | Width of the shimmer. Accepts px number or `"%"` string |
-| `height` | `number` | `16` | Height in pixels |
+| `height` | `number \| string` | `16` | Height of the shimmer. Accepts px number or `"%"` string |
 | `borderRadius` | `number` | `8` | Corner radius |
 | `isDark` | `boolean` | `undefined` | Force dark appearance. If omitted, auto-detects system theme |
 | `baseColor` | `string` | theme default | Override the background color |
@@ -108,6 +109,12 @@ export default function MyScreen() {
   {/* Card subtitle */}
   <Shimmer width="50%" height={13} borderRadius={6} />
 </View>
+```
+
+### Full height container
+
+```tsx
+<Shimmer width="100%" height="100%" borderRadius={12} />
 ```
 
 ### List rows placeholder
