@@ -44,27 +44,42 @@ export interface ShimmerProps {
      * Additional styles applied to the shimmer container.
      */
     style?: StyleProp<ViewStyle>;
+    // ── Margin props ──────────────────────────────
+    margin?: number;
+    marginTop?: number;
+    marginBottom?: number;
+    marginLeft?: number;
+    marginRight?: number;
+    marginHorizontal?: number;
+    marginVertical?: number;
 }
 
 const THEME = {
     light: { base: '#cbcbcb', pulse: '#ebeef2' },
-    dark:  { base: '#2d2e32', pulse: '#2e3340' },
+    dark: { base: '#2d2e32', pulse: '#2e3340' },
 };
 
 export default function Shimmer({
-    width        = '100%',
-    height       = 16,
+    width = '100%',
+    height = 16,
     borderRadius = 8,
     isDark,
     baseColor,
-    speed        = 1000,
+    speed = 1000,
     style,
+    margin,
+    marginTop,
+    marginBottom,
+    marginLeft,
+    marginRight,
+    marginHorizontal,
+    marginVertical,
 }: ShimmerProps) {
     // useColorScheme re-renders instantly when system theme changes
     const systemScheme = useColorScheme();
-    const dark  = isDark !== undefined ? isDark : systemScheme === 'dark';
+    const dark = isDark !== undefined ? isDark : systemScheme === 'dark';
     const theme = dark ? THEME.dark : THEME.light;
-    const bg    = baseColor ?? theme.base;
+    const bg = baseColor ?? theme.base;
 
     const anim = useRef(new Animated.Value(0)).current;
 
@@ -72,15 +87,15 @@ export default function Shimmer({
         const loop = Animated.loop(
             Animated.sequence([
                 Animated.timing(anim, {
-                    toValue:         1,
-                    duration:        speed,
-                    easing:          Easing.inOut(Easing.ease),
+                    toValue: 1,
+                    duration: speed,
+                    easing: Easing.inOut(Easing.ease),
                     useNativeDriver: true,
                 }),
                 Animated.timing(anim, {
-                    toValue:         0,
-                    duration:        speed,
-                    easing:          Easing.inOut(Easing.ease),
+                    toValue: 0,
+                    duration: speed,
+                    easing: Easing.inOut(Easing.ease),
                     useNativeDriver: true,
                 }),
             ])
@@ -90,7 +105,7 @@ export default function Shimmer({
     }, [anim, speed]);
 
     const opacity = anim.interpolate({
-        inputRange:  [0, 1],
+        inputRange: [0, 1],
         outputRange: dark ? [0.45, 0.85] : [0.55, 1],
     });
 
@@ -103,6 +118,13 @@ export default function Shimmer({
                     borderRadius,
                     backgroundColor: bg,
                     opacity,
+                    margin,
+                    marginTop,
+                    marginBottom,
+                    marginLeft,
+                    marginRight,
+                    marginHorizontal,
+                    marginVertical,
                 },
                 style,
             ]}

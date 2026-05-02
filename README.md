@@ -196,8 +196,13 @@ const stylesheet = StyleSheet.create(theme => ({
 | `baseColor` | `string` | theme default | Override the background color |
 | `speed` | `number` | `1000` | Animation cycle duration in ms. Lower = faster |
 | `style` | `StyleProp<ViewStyle>` | `undefined` | Extra styles on the container |
-
----
+| `margin`           | `number` | `undefined` | Outer margin on all sides |
+| `marginTop`        | `number` | `undefined` | Outer margin top |
+| `marginBottom`     | `number` | `undefined` | Outer margin bottom |
+| `marginLeft`       | `number` | `undefined` | Outer margin left |
+| `marginRight`      | `number` | `undefined` | Outer margin right |
+| `marginHorizontal` | `number` | `undefined` | Outer margin left and right |
+| `marginVertical`   | `number` | `undefined` | Outer margin top and bottom |
 
 ## Use Cases
 
@@ -288,6 +293,16 @@ const stylesheet = StyleSheet.create(theme => ({
 <Shimmer width={200} height={16} speed={2000} />
 ```
 
+### Spacing between shimmer blocks
+
+```tsx
+<View>
+  <Shimmer width="100%" height={180} borderRadius={16} marginBottom={12} />
+  <Shimmer width="70%"  height={16}  borderRadius={5}  marginBottom={8} />
+  <Shimmer width="50%"  height={13}  borderRadius={4}  marginBottom={8} />
+  <Shimmer width={120}  height={36}  borderRadius={18} marginTop={4} />
+</View>
+```
 ---
 
 ## Theme Defaults
